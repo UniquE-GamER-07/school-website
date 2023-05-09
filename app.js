@@ -21,3 +21,4 @@ const observer = new IntersectionObserver(entries =>
 
 //Telling Observer which element to Track
 observer.observe(document.querySelector('.expand-tree'));
+
