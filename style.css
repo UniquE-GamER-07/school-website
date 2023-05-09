@@ -1,0 +1,227 @@
+body
+{
+  background: linear-gradient(94deg, rgba(0,150,255,1) 0%, rgba(36,162,86,1) 62%);
+}
+
+html
+{
+  scroll-behavior: smooth;
+}
+
+.top-bar
+{
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: black;
+    position: absolute;
+    margin-left: 40%;    
+}
+
+.top-bar a
+{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 20px 22px;
+    text-decoration: none;
+    font-size: 25px;
+    transition: 0.3s;
+    border-radius: 2cm;
+    
+}
+
+.top-bar  a:hover
+{
+    color: white;
+    font-size: 30px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 10%;
+}
+
+.top-bar a.active
+{
+    color: white;
+    background-color: rgba(255, 66, 66, 0.625);
+}
+
+#kahoot
+{
+    display: flex;
+    max-width: 75%;
+    max-height: 75%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 20%;
+    transition: ease-in 0.25s;
+    outline: 5cm, wheat;
+}
+
+#kahoot:hover
+{
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+
+.carousel {
+    align-items: center;
+    display: flex;
+    margin: 2rem auto;
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+  }
+  .carousel__images {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.25s;
+  }
+  .carousel__images img {
+    border-radius: 5px;
+  }
+  .carousel__button {
+    background: teal;
+    border: 0;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 3rem;
+    opacity: 0.25;
+    position: absolute;
+    transition: opacity 0.25s;
+    width: 3rem;
+    z-index: 1;
+  }
+  .carousel__button.previous {
+    left: 5px;
+  }
+  .carousel__button.next {
+    right: 5px;
+  }
+  .carousel__button:hover {
+    opacity: 0.5;
+  }
+
+  .images-left
+  {
+    margin-left: 85px;
+    border-radius: 20px;
+    display: flex;
+  }
+
+  .images-right
+{
+  margin-left: 85px;
+  border-radius: 20px;
+  display: flex
+  
+}
+
+.journey
+{
+  background-color: #D7CC64;
+  font-family: 'Inika', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 384px;
+  width: 303px;
+  height: 85px;
+  left: 400px;
+  top: 845px;
+  border-radius: 15px;
+  cursor: pointer;
+  border-color: rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+
+.journey:hover
+{
+  box-shadow:  0 0 20px rgba(0,0,0,0.5);
+  -webkit-transform: scale(1.1);
+
+}
+
+#h2
+{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  margin-left: 720px;
+  font-style: italic;
+  font-size: 48px;
+  line-height: 58px;
+  background-color: rgba(0, 0, 0, 0.25);
+  margin-right: 574px;
+
+}
+
+.para
+{
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 58px;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-shadow: 0px 7px 4px rgba(0,0,0,00.25);
+}
+
+#sites
+{
+  height: 100%;
+}
+
+.LinkTree
+{
+  display: relative;
+  text-align: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  margin-left: 30%;
+  font-style: italic;
+  font-size: 48px;
+  line-height: 58px;
+  margin-right: 574px;
+}
+
+@keyframes expand 
+{
+  0%
+  {
+    font-size: 45px;
+    transform-origin: 15% 15%;
+  }
+
+  50%
+  {
+    transform-origin: 30% 15%;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference)
+{
+  .LinkTree-animation
+  {
+    transition: opacity 1.5s ease, transform 1.5s ease;
+  }
+}
+
+.children
+{
+  opacity: 0;
+}
