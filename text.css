@@ -1,3 +1,11 @@
+
+html
+{
+  scroll-behavior: smooth;
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -57,4 +65,26 @@
 
 .navbar ul li:hover:after{
     width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1{
+    font-size: 55px;
+    margin-top: 80px;
+}
+
+.content p{
+    font-size: 19px;
+    margin: 20px auto;
+    font-weight: 200;
+    line-height: 25px;
 }
