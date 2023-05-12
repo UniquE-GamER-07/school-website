@@ -88,30 +88,3 @@ html
     font-weight: 200;
     line-height: 25px;
 }
-
-.fadeIn
-{
-    opacity: 0;
-    transform: translate3d(-50px, 0, 0); /* ADDED - start x position as -50px */
-    cursor: pointer;
-    transition: 1s all ease-in-out;
-}
-
-.fadeIn.show {
-    opacity: 1;
-    transform: translate3d(0, 0, 0); 
-}
-
-.fadeIn-2
-{
-    opacity: 0;
-    transform: translate3d(-50px, 0, 0); /* ADDED - start x position as -50px */
-    cursor: pointer;
-    transition: 2s all ease-in-out;
-}
-
-.fadeIn-2.show
-{
-    opacity: 1;
-    transform: translate3d(0, 0, 0); 
-}
