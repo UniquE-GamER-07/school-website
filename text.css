@@ -89,45 +89,41 @@ html
     line-height: 25px;
 }
 
-
-.scroll-down-arrow {
-  position: absolute;
-  left: 50%;
-  top: 85%;
-  transform: translate(-50%, -60%);
-  width: 30px;
-  height: 30px;
+button{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 30px 10px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #009688;
+  background: transparent;
+  color: #fff;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
-
-.scroll-down-arrow span {
-  display: block;
-  width: 10px;
-  height: 10px;
-  margin: 0 auto;
-  border-radius: 50%;
-  background-color: #fff;
-  animation: bounce 1.2s infinite ease-in-out;
-}
-
-.scroll-down-arrow span:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.scroll-down-arrow span:nth-child(3) {
-  animation-delay: 0.4s;
-}
-
-  
-  @keyframes bounce {
-    0%, 80%, 100% {
-      transform: scale(1);
-    }
-    40% {
-      transform: scale(1.4);
-    }
-  }
      
+span{
+  background: #009688;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span{
+  width: 100%;
+}
+
+button:hover{
+  border: none;
+}
+
 .fadeIn
 {
     opacity: 0;
