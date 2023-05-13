@@ -93,7 +93,7 @@ html
 .scroll-down-arrow {
   position: absolute;
   left: 50%;
-  top: 80%;
+  top: 85%;
   transform: translate(-50%, -60%);
   width: 30px;
   height: 30px;
