@@ -201,3 +201,11 @@ section::before
 .parallax:nth-child(even) {
   background-image: url(images\ again/mayoor-image.png);
 }
+
+.monitor
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
