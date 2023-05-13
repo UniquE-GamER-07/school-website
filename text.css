@@ -171,7 +171,6 @@ section::before
   background-color: rgba(15, 13, 36);
 }
 
-<<<<<<< Updated upstream
 .parallax {
   position: relative;
   height: 100vh;
@@ -188,5 +187,3 @@ section::before
 .parallax:nth-child(even) {
   background-image: url(images\ again/mayoor-image.png);
 }
-=======
->>>>>>> Stashed changes
