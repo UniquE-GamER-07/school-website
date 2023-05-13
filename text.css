@@ -88,3 +88,42 @@ html
     font-weight: 200;
     line-height: 25px;
 }
+
+
+.scroll-down-arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  .scroll-down-arrow span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: bounce 1.2s infinite ease-in-out;
+  }
+  
+  .scroll-down-arrow span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .scroll-down-arrow span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes bounce {
+    0%, 80%, 100% {
+      transform: scale(1);
+    }
+    40% {
+      transform: scale(1.4);
+    }
+  }
+          
