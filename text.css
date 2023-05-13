@@ -89,7 +89,6 @@ html
     line-height: 25px;
 }
 
-<<<<<<< Updated upstream
 
 .scroll-down-arrow {
     position: absolute;
@@ -128,7 +127,6 @@ html
     }
   }
           
-=======
 .fadeIn
 {
     opacity: 0;
@@ -155,4 +153,3 @@ html
     opacity: 1;
     transform: translate3d(0, 0, 0); 
 }
->>>>>>> Stashed changes
