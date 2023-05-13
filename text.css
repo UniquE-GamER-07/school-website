@@ -167,3 +167,20 @@ section::before
   color: #fff;
   background-color: rgba(15, 13, 36);
 }
+
+.parallax {
+  position: relative;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.parallax:nth-child(odd) {
+  background-image:url(images\ again/mayoor-image.png) ;
+}
+
+.parallax:nth-child(even) {
+  background-image: url(images\ again/mayoor-image.png);
+}
