@@ -185,5 +185,5 @@ section::before
 }
 
 .parallax:nth-child(even) {
-  background-image: url(images\ again/mayoor-logo.png);
+  background-image: url(images\ again/mayoor-image.png);
 }
