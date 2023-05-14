@@ -124,7 +124,7 @@ body
     transform: translate3d(0, 0, 0); 
 }
 
-section::before
+/*section::before
 {
   content: '';
   position: absolute;
@@ -133,7 +133,7 @@ section::before
   height: 100px;
   background: linear-gradient(to bottom, rgba(0, 0,0 , .75), #0f0d24);
   z-index: 1000;
-}
+}*/
 
 .scroll-down {
   height: 50px;
