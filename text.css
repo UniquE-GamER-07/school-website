@@ -140,8 +140,8 @@ body
   width: 25px;
   border: 2px solid white;
   position: absolute;
-  left: 49%;
-  bottom: 110px;
+  left: 49.5%;
+  bottom: 35px;
   border-radius: 50px;
   cursor: pointer;
 }
