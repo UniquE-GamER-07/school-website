@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.fadeIn-2').forEach(function(element) {
     element.classList.add('show');
   });
+  document.querySelectorAll('.animation').forEach(function(element) {
+    element.classList.add('play');
+  });
 });
 
 const sections = document.querySelectorAll('.parallax');
