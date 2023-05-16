@@ -243,7 +243,8 @@ body
 .content-sites
 {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns:  600px 600px 600px 600px;
+  grid-template-rows:  150px 150px 150px 150px;
   gap: 10px;
   padding: 10px;
 }
