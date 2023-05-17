@@ -257,6 +257,7 @@ body
 .parallax
 {
 overflow: hidden;
+background-color: rgb(20,20,20);
 }
 
 
@@ -267,6 +268,10 @@ overflow: hidden;
   background-color: rgb(20,20,20);
   margin: 0rem;
   overflow: hidden;
+}
+
+.page-2{
+  background-color: rgb(20,20,20);
 }
 
 

@@ -35,40 +35,6 @@ window.addEventListener('load', () => {
   parallaxScroll();
 });
 
-// const track = document.getElementById("image-track");
-// console.log(track)
-
-// window.onmouseup = () =>{
-//   track.dataset.mouseDownAt = "0";
-// }
-
-// window.onmousedown = e =>{
-//   track.dataset.mouseDownAt = e.clientX;
-// }
-
-
-// window.addEventListener("mousemove", (e) => {
-//   if(track.dataset.mouseDownAt === "0") return;
-
-//   const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
-//         maxDelta = window.innerWidth/2;
-// console.log(track)
-        
-//   const percentage = (mouseDelta/maxDelta) * -100;
-
-//   track.style.transform = `translate(${percentage}%, -50%)`;
-// }
-// )
-
-// track.animate({
-//   transform: `translate(${nextPercentage}%, -50%)`
-// }, { duration: 1200, fill: "forwards" });
-
-// for(const image of track.getElementsByClassName("image")) {
-//   image.animate({
-//     objectPosition: `${100 + nextPercentage }% center`
-//   }, { duration: 1200, fill: "forwards" });
-// }
 
 const track = document.getElementById("image-track");
 
