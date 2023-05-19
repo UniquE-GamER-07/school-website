@@ -35,6 +35,10 @@ window.addEventListener('load', () => {
   parallaxScroll();
 });
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 
 const track = document.getElementById("image-track");
 
@@ -82,6 +86,7 @@ window.onmousemove = e => handleOnMove(e);
 
 window.ontouchmove = e => handleOnMove(e.touches[0]);
 
+<<<<<<< Updated upstream
 //Getting the element
 const MainText = docum
 
@@ -89,3 +94,15 @@ const MainText = docum
 const observer = new IntersectionObserver(entries =>{
   console.log(entries);
 }) 
+=======
+//Getting the elements
+const MainText = document.querySelectorAll('.MainText')
+
+
+//Making new intersection observer
+const observer = new IntersectionObserver(entries => {
+  console.log(entries);
+})
+
+observer.observe(MainText[0])
+>>>>>>> Stashed changes

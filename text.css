@@ -7,6 +7,7 @@ html
 body
 {
   background-color:rgba(0,0,0,0.9);
+ 
 }
 
 *{
@@ -124,6 +125,18 @@ body
     transform: translate3d(0, 0, 0); 
 }
 
+.MainText
+{
+  transition: 2s all ease-in-out;
+  cursor: pointer;
+}
+
+.MainText.hide
+{
+  opacity: 0;
+  transform: translate3d(0, 0, 0); 
+}
+
 /*section::before
 {
   content: '';
@@ -199,7 +212,10 @@ body
 }
 
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .monitor
 {
   display: block;
@@ -284,4 +300,5 @@ background-color: rgb(20,20,20);
   height: 56vmin;
   object-fit: cover;
   object-position: 100% center;
+  border-radius: 15px;
 }
