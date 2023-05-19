@@ -81,3 +81,11 @@ window.ontouchend = e => handleOnUp(e.touches[0]);
 window.onmousemove = e => handleOnMove(e);
 
 window.ontouchmove = e => handleOnMove(e.touches[0]);
+
+//Getting the element
+const MainText = docum
+
+//Creating Intersection Observer to check if text is still in view
+const observer = new IntersectionObserver(entries =>{
+  console.log(entries);
+}) 
