@@ -35,10 +35,7 @@ window.addEventListener('load', () => {
   parallaxScroll();
 });
 
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
 
 const track = document.getElementById("image-track");
 
@@ -86,23 +83,15 @@ window.onmousemove = e => handleOnMove(e);
 
 window.ontouchmove = e => handleOnMove(e.touches[0]);
 
-<<<<<<< Updated upstream
-//Getting the element
-const MainText = docum
-
-//Creating Intersection Observer to check if text is still in view
-const observer = new IntersectionObserver(entries =>{
-  console.log(entries);
-}) 
-=======
 //Getting the elements
-const MainText = document.querySelectorAll('.MainText')
+/*const MainText = document.querySelectorAll('.MainText')
 
 
 //Making new intersection observer
 const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry =>{
+    entry.target.classList.toggle('show')
+  })
   console.log(entries);
 })
-
-observer.observe(MainText[0])
->>>>>>> Stashed changes
+*/
