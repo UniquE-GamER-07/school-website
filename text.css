@@ -200,7 +200,7 @@ body
 #page-2
 {
   color: #fff;
-  background-color: rgba(15, 13, 36);
+  background-color: rgb(20,20,20);
 }
 
 .parallax {
@@ -212,10 +212,7 @@ body
 }
 
 
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
 .monitor
 {
   display: block;
@@ -300,5 +297,5 @@ background-color: rgb(20,20,20);
   height: 56vmin;
   object-fit: cover;
   object-position: 100% center;
-  border-radius: 15px;
+  border-radius: 0.5rem;
 }
