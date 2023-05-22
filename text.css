@@ -297,5 +297,9 @@ background-color: rgb(20,20,20);
   height: 56vmin;
   object-fit: cover;
   object-position: 100% center;
-  border-radius: 0.5rem;
+  border-radius: 0rem;
+}
+
+#image-track > .image:hover{
+  cursor: pointer;
 }
