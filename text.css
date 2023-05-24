@@ -297,9 +297,23 @@ background-color: rgb(20,20,20);
   height: 56vmin;
   object-fit: cover;
   object-position: 100% center;
-  border-radius: 0rem;
+  border-radius: 0.5rem;
 }
 
 #image-track > .image:hover{
   cursor: pointer;
+}
+
+.docs
+{
+  background-image: url(/images\ again/docs-new.png);
+  position: relative;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
 }
