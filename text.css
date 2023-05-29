@@ -317,3 +317,25 @@ background-color: rgb(20,20,20);
   justify-content: center;
   color: whitesmoke;
 }
+
+
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fullscreen #image-track {
+  height: 70vh;
+}
+
+.fullscreen #image-track > .image {
+  max-height: 100%;
+}

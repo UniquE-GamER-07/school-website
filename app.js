@@ -36,7 +36,7 @@ window.addEventListener('load', () => {
 });
 
 
-const track = document.getElementById("image-track");
+/*const track = document.getElementById("image-track");
 
 const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
 
@@ -68,6 +68,69 @@ const handleOnMove = e => {
   }
 }
 
+
+window.onmousedown = e => handleOnDown(e);
+
+window.ontouchstart = e => handleOnDown(e.touches[0]);
+
+window.onmouseup = e => handleOnUp(e);
+
+window.ontouchend = e => handleOnUp(e.touches[0]);
+
+window.onmousemove = e => handleOnMove(e);
+
+window.ontouchmove = e => handleOnMove(e.touches[0]);
+*/
+
+const track = document.getElementById("image-track");
+const body = document.querySelector("body");
+const nextPage = document.getElementById("page-2"); // Change 'page-2' to the ID of your second page element
+
+const handleOnDown = e => {
+  track.dataset.mouseDownAt = e.clientX;
+};
+
+const handleOnUp = () => {
+  track.dataset.mouseDownAt = "0";
+  track.dataset.prevPercentage = track.dataset.percentage;
+};
+
+const handleOnMove = e => {
+  if (track.dataset.mouseDownAt === "0") return;
+
+  const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
+    maxDelta = window.innerWidth / 2;
+
+  const percentage = (mouseDelta / maxDelta) * -100,
+    nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
+    nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
+
+  track.dataset.percentage = nextPercentage;
+
+  track.style.transform = `translate(${nextPercentage}%, -50%)`;
+
+  for (const image of track.getElementsByClassName("image")) {
+    image.style.objectPosition = `${100 + nextPercentage}% center`;
+  }
+};
+
+const handleOnClick = () => {
+  if (track.dataset.percentage === "0") {
+    body.classList.remove("fullscreen");
+    track.style.transform = `translate(0%, -50%)`;
+    for (const image of track.getElementsByClassName("image")) {
+      image.style.objectPosition = `100% center`;
+    }
+  } else {
+    body.classList.add("fullscreen");
+    track.style.transform = `translate(-100%, -50%)`;
+    for (const image of track.getElementsByClassName("image")) {
+      image.style.objectPosition = `100% center`;
+    }
+    nextPage.scrollIntoView({ behavior: "smooth" }); // Scrolls to the next page
+  }
+};
+
 /* -- Had to add extra lines for touch events -- */
 
 window.onmousedown = e => handleOnDown(e);
@@ -81,6 +144,9 @@ window.ontouchend = e => handleOnUp(e.touches[0]);
 window.onmousemove = e => handleOnMove(e);
 
 window.ontouchmove = e => handleOnMove(e.touches[0]);
+
+window.onclick = () => handleOnClick();
+
 
 /*function menuclick() {
   if document.getElementsByClassName('image') ==
