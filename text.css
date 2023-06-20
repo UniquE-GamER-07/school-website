@@ -86,7 +86,7 @@ body
 
 .content h1{
     font-size: 55px;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .content p{
@@ -102,7 +102,6 @@ body
 {
     opacity: 0;
     transform: translate3d(0, -36px, 0); /* ADDED - start x position as -50px */
-    cursor: pointer;
     transition: 1s all ease-in-out;
 }
 
@@ -115,7 +114,6 @@ body
 {
     opacity: 0;
     transform: translate3d(0, -36px, 0); /* ADDED - start x position as -50px */
-    cursor: pointer;
     transition: 2s all ease-in-out;
 }
 
@@ -128,7 +126,6 @@ body
 .MainText
 {
   transition: 2s all ease-in-out;
-  cursor: pointer;
 }
 
 .MainText.hide
@@ -315,7 +312,7 @@ background-color: rgb(20,20,20);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: whitesmoke;
+  color: black;
 }*/
 
 
