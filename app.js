@@ -198,3 +198,18 @@ window.onclick = () => handleOnClick();
 /*function menuclick() {
   if document.getElementsByClassName('image') ==
 }*/
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const clickableImages = document.querySelectorAll(".clickable-image");
+    
+    clickableImages.forEach(function (image) {
+      image.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent the default link behavior
+        const href = image.getAttribute("data-href");
+        window.location.href = href; // Navigate to the specified URL
+      });
+    });
+  });
+
